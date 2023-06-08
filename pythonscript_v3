@@ -1,0 +1,28 @@
+from easysnmp import snmp_get
+
+#result = snmp_get('.1.3.6.1.2.1.1.1.0', hostname='127.0.0.1', community='public', version=1)
+result = snmp_get('.1.3.6.1.2.1.1.1.0', hostname='192.168.0.3', community='public', version=1)  #Diverses
+result1 = snmp_get('.1.3.6.1.2.1.1.5.0', hostname='192.168.0.3', community='public', version=1) #Hostname
+result2 = snmp_get('.1.3.6.1.2.1.1.6.0', hostname='192.168.0.3', community='public', version=1) #System-Aufenthalt
+result3 = snmp_get('.1.3.6.1.2.1.1.3.0', hostname='192.168.0.3', community='public', version=1) #Uptime
+result4 = snmp_get('.1.3.6.1.2.1.1.1.0', hostname='192.168.0.3', community='public', version=1)  #Diverses
+result5 = snmp_get('.1.3.6.1.2.1.1.5.0', hostname='192.168.0.3', community='public', version=1) #Hostname
+result6 = snmp_get('.1.3.6.1.2.1.1.6.0', hostname='192.168.0.3', community='public', version=1) #System-Aufenthalt
+result7 = snmp_get('.1.3.6.1.2.1.1.3.0', hostname='192.168.0.3', community='public', version=1) #Uptime
+result8 = snmp_get('.1.3.6.1.2.1.1.1.0', hostname='192.168.0.3', community='public', version=1)  #Diverses
+result9 = snmp_get('.1.3.6.1.2.1.1.5.0', hostname='192.168.0.3', community='public', version=1) #Hostname
+result10 = snmp_get('.1.3.6.1.2.1.1.6.0', hostname='192.168.0.3', community='public', version=1) #System-Aufenthalt
+result11 = snmp_get('.1.3.6.1.2.1.1.3.0', hostname='192.168.0.3', community='public', version=1) #Uptime
+
+print (result.value)
+print (result1.value)
+print (result2.value)
+print (result3.value)
+print (result4.value)
+print (result5.value)
+print (result6.value)
+print (result7.value)
+print (result8.value)
+print (result9.value)
+print (result10.value)
+print (result11.value)
